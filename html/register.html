@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Cadastre-se no HTC</title>
+  </head>
+  <body>
+    <section class="register-container">
+      <h1 class="title">Faça seu cadastro</h1>
+      <form class="form">
+        <div class="box">
+          <label class="label-field" for="name-input">Nome completo</label>
+          <input
+            type="text"
+            class="input-field"
+            id="name-input"
+            placeholder="Digite seu nome completo"
+            required
+          />
+        </div>
+        <div class="double-box">
+          <div class="box space-between">
+            <label class="label-field" for="date-input"
+              >Data de Nascimento</label
+            >
+            <input
+              type="date"
+              class="input-field"
+              name="date-input"
+              id="date-input"
+              required
+            />
+          </div>
+
+          <div class="box space-between">
+            <label class="label-field" id="country-select">País</label>
+            <select
+              class="input-field"
+              name="country-select"
+              id="country-select"
+              required
+            >
+              <option value="" disabled selected>selecionar..</option>
+              <option value="brasil">Brasil</option>
+              <option value="argentina">Argentina</option>
+              <option value="mexico">México</option>
+            </select>
+          </div>
+        </div>
+        <div class="box">
+          <span class="gender-title">Gênero:</span>
+          <div class="gender-box">
+            <div class="gender-select">
+              <input
+                type="radio"
+                class="gender-input"
+                name="gender"
+                id="fem-gender"
+                required
+              />
+              <label for="fem-gender">Feminino</label>
+            </div>
+            <div class="gender-select">
+              <input
+                type="radio"
+                class="gender-input"
+                name="gender"
+                id="masc-gender"
+                required
+              />
+              <label for="masc-gender">Masculino</label>
+            </div>
+            <div class="gender-select">
+              <input
+                type="radio"
+                class="gender-input"
+                name="gender"
+                id="no-gender"
+                required
+              />
+              <label for="no-gender">Não declarar</label>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <label class="label-field" for="email-input">E-mail</label>
+          <input
+            type="email"
+            class="input-field"
+            name="email-input"
+            id="email-input"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+        <div class="box">
+          <label class="label-field" for="password-input">Senha</label>
+          <input
+            type="password"
+            class="input-field"
+            name="password-input"
+            id="password-input"
+            placeholder="Crie sua senha"
+            required
+          />
+        </div>
+        <div class="box">
+          <label class="label-field" for="pass-conf-input"
+            >Confirme sua senha</label
+          >
+          <input
+            type="password"
+            class="input-field"
+            name="pass-conf-input"
+            id="pass-conf-input"
+            placeholder="Confirmar senha"
+            required
+          />
+        </div>
+        <div class="terms">
+          <input
+            type="checkbox"
+            class="check-box"
+            name="terms-checkbox"
+            id="terms-checkbox"
+            required
+          />
+          <label class="small" for="terms-checkbox">
+            Aceito os <a href="#">termos e condições</a> e concordo com as
+            <a href="#">políticas de privacidade</a> do BLABLABLA.
+          </label>
+        </div>
+        <button class="button">Cadastrar</button>
+      </form>
+      <p class="end small">
+        Já tem uma conta no BLABLABLA?
+        <a href="../index.html">Entre agora</a>
+      </p>
+    </section>
+  </body>
+</html>

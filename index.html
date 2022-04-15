@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Login HTC</title>
+  </head>
+  <body>
+    <section class="login-container">
+      <h1 class="title">Faça seu login</h1>
+      <form class="form">
+        <div class="box">
+          <label class="label-field" for="email-field">E-mail</label>
+          <input
+            type="email"
+            class="input-field"
+            id="email-field"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+        <div class="box">
+          <label class="label-field" for="password-field">Senha</label>
+          <input
+            type="password"
+            class="input-field"
+            id="password-field"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+        <div class="box">
+          <div class="double-box">
+            <input class="check-box" type="checkbox" id="check-box-fied" />
+            <div class="double-box">
+              <label class="small" for="check-box-fied">Mantenha-me conectado</label>
+              <a href="./html/forgot-password.html">Esqueci minha senha</a>
+            </div>
+          </div>
+        </div>
+        <button class="button">Entrar</button>
+      </form>
+      <label class="small"
+        >Ainda não tem uma conta?
+        <a href="./html/register.html">Cadastre-se</a></label
+      >
+    </section>
+  </body>
+</html>
